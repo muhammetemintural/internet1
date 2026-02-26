@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Öğrenci İsim</th>
+                <th>Öğrenci No</th>
+                <th>Okuduğu Bölüm</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Muhammet</td>
+                <td>61563</td>
+                <td rowspan="2">Bilgisayar Programcılığı</td>
+            </tr>
+            <tr>
+                <td>Ahmet</td>
+                <td>64646</td>
+            </tr>
+            <tr>
+                <td>Ayşe</td>
+                <td>56412</td>
+                <td>Elektrik Elektronik Mühendisliği</td>
+            </tr>
+            <tr>
+                <td>Mehmet</td>
+                <td>23523</td>
+                <td>Makine Mühendisliği</td>
+            </tr>
+        </tbody>
+        tfoot>
+            <tr>
+                <td colspan="3">Toplam Öğrenci Sayısı: 4</td>
+            </tr>
+    </table>
+    <br><br>
+    <form>
+        <label for="name">Adınız:</label>
+        <input type="text" id="name" name="name">
+        <br><br>
+
+        <label for="no">Öğrenci Numaranız:</label>
+        <input type="text" id="no" name="no">
+        <br><br>
+
+        <label><b>Bölüm Seçiniz</b></label>
+        <br><br>
+
+        <label for="bilgisayar">Bilgisayar Programcılığı:</label>
+        <input value="bilgisayar prgoramcılığı" type="radio" id="bilgisayar" name="bolum" id="bilgisayar">
+        <br><br>
+        
+        <label for="elektrik">Elektrik Elektronik Mühendisliği:</label>
+        <input value="elektrik elektronik mühendisliği" type="radio" id="elektrik" name="bolum" id="elektrik">
+        <br><br>
+        
+        <label for="makine">Makine Mühendisliği:</label>
+        <input value="makine mühendisliği" type="radio" id="makine" name="bolum" id="makine">
+        <br><br>
+
+        <label for="check">Bilgileriniz kaydedilsin mi?</label>
+        <input type="checkbox" id="check" name="check">
+        <br><br>
+
+        <input type="submit" value="Kaydet">
+    </form>
+</body>
+</html>
